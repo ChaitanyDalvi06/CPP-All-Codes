@@ -5,24 +5,31 @@ int main()
     int n;
     cout << "Enter the number : ";
     cin >> n;
+    if ((n == 0) || (n == 1))
+    {
+        cout << "0 and 1 are not prime numbers";
+        return 0;
+    }
     if (n % 2 == 0)
     {
-        cout << "The number is not prime number ";
+        cout << n << "The number is not prime";
+        return 0;
     }
-    else if ((n == 1) || (n == 0))
+    for (int i = 2; i < n; i++)
     {
-        cout << "the number is not prime nor composite ";
-    }
-    else if (n == 2)
-    {
-        cout << "the number is prime ";
-    }
-    for (int i = 2; i <= n; i++)
-    {
-        if (n % i == 0) 
+        if (n % i == 0)
         {
-            cout << "The number is prime ";
+            cout << "not prime ";
+            return 0;
         }
+        else
+        {
+            cout << "Its a prime number";
+            break;
+        }
+        // else if (i == n-1){
+        //     cout<<"Prime";
+
+        // }
     }
-    return 0;
 }

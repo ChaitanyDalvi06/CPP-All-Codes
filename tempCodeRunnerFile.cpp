@@ -1,6 +1,1 @@
-#include <iostream>
-using namespace std;
-int main()
-{
-return 0;
-}
+nt space = 1; space <= numRows - i; ++space)
